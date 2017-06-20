@@ -31,7 +31,7 @@
 
     <section>
       <h1>Sorrel Juice</h1>
-      
+
       <figure>
         <img src="http://caribbeanpot.com/wp-content/uploads/2014/03/jamaican-sorrel-9.jpg" alt="sorrel-drink-pic" />
         <figcaption>
@@ -65,6 +65,36 @@
                 Add White Oak Rum, mix and Enjoy!
               </li>
             </ol>
+    </section>
+
+    <section>
+      <form action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+
+        <br>
+        <label for="rating">Rating</label>
+
+        1<input type="radio" id="rating1" name="rating" value="1">
+        2<input type="radio" id="rating2" name="rating" value="2">
+        3<input type="radio" id="rating3" name="rating" value="3">
+        4<input type="radio" id="rating4" name="rating" value="4">
+        5<input type="radio" id="rating5" name="rating" value="5">
+
+        <br>
+        <label for="cooking expertise">Cooking Expertise</label>
+        <select id="expertise" name="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+
+        <br>
+        <label for="review">Review</label>
+        <textarea name="review" rows="8" cols="80"></textarea>
+      </form>
     </section>
 
     <footer>
